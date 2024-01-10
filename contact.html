@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="shortcut icon" href="https://static.thenounproject.com/png/581064-200.png" type="image/x-icon">
+    <title>Contact Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Quicksand', serif;
+    background-color: #ecf9ff;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    
+}
+nav{
+    background-color:#ffffff ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.link-container{
+    display: flex;
+    
+}
+nav li{
+    list-style-type: none;
+    margin:12px;
+    padding: 7px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(212, 211, 211);
+}
+#brand{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    background-color: transparent;
+    border: 3px solid rgba(0, 0, 0, 0.575);
+    padding: 5px;
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14pt;
+}
+h1{
+    margin-bottom: 15px;
+}
+.contact-page {
+  text-align: center;
+  padding: 20px;
+  height: 60vh;
+  
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+ 
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid black;
+  padding: 30px;
+  width: 500px;
+}
+
+.icon i {
+  font-size: 48px;
+   
+}
+.icon i:hover{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+
+.icon span {
+  margin-top: 10px;
+}
+@media screen and (max-width:700px){
+    .icon{
+        max-width: 250px;
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <li id="brand"><a href="">LP</a></li>
+        <div class="link-container">
+            <li><a href="index.html" >Return</a></li>
+        </div>
+    </nav>
+
+    <div class="contact-page">
+        <h1>Contato</h1>
+        <div class="icon-container">
+          <a href="https://github.com/LucasAlves03" target="_blank" class="icon">
+            <i class="bi bi-github"></i>
+            <span>Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/lucas-penha-a45509210/" target="_blank"  class="icon">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/LucasA19_" target="_blank"  class="icon">
+            <i class="bi bi-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
