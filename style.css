@@ -68,7 +68,8 @@ a{
     width:100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-
+    margin: 0;
+    padding: 0;
 }
 .desc{
     background-color: #4158D0;
@@ -100,16 +101,6 @@ a{
 .btn a{
     color: white; 
 }
-span i{
-    font-size: 40px;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    color: rgb(0, 81, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
-}
-
 @media screen and (min-width:1230px){
     .grid{
         grid-template-columns: repeat(4,1fr);
@@ -127,7 +118,7 @@ span i{
         padding: 3px;
     }
     .desc > p{
-        line-height: 10px;
+        line-height: 20px;
     }
 }
 @media screen and (max-width:650px){
@@ -140,6 +131,9 @@ span i{
     .btn{
         font-size: 5pt;
     }
+    .desc > p{
+        line-height: 15px;
+    }
 }
 @media screen and (max-width:550px){
     .card{
@@ -148,5 +142,8 @@ span i{
     }
     .desc{
         font-size: 5pt;
+    }
+    .desc > p{
+        line-height: 10px;
     }
 }
